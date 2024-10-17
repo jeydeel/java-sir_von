@@ -1,0 +1,34 @@
+import java.util.Scanner;
+
+class HelloWorld {
+    public static void main(String[] args) {
+        double a,b,c,d;
+        Scanner input = new Scanner(System.in);
+        System.out.print ("Enter STAGE presence 25%; ");
+        a=input.nextDouble();
+        System.out.print ("Enter STAGE presence 25%; ");
+        b=input.nextDouble();
+        System.out.print ("Enter 25%: ");
+        c=input.nextDouble();
+        System.out.print ("Enter 30%: ");
+        d=input.nextDouble();
+        
+        double total=a+b+c+d;
+        System.out.print ("Ave"+total);
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+
+        
+        
+        
+    }
+}
