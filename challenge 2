@@ -1,0 +1,37 @@
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+
+        System.out.println("*************************************");
+        System.out.print("Please enter year level (1 – 4): ");
+
+        
+        int yearLevel = input.nextInt();
+
+        System.out.println("*************************************");
+
+       
+        switch (yearLevel) {
+            case 1:
+                System.out.println("Welcome FRESHMAN");
+                break;
+            case 2:
+                System.out.println("Welcome SOPHOMORE");
+                break;
+            case 3:
+                System.out.println("Welcome JUNIOR");
+                break;
+            case 4:
+                System.out.println("Welcome SENIOR");
+                break;
+            
+        }
+
+        input.close(); 
+        System.exit(0);
+    }
+}
+
