@@ -1,0 +1,39 @@
+package lancexd;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.util.Scanner;
+
+
+public class main1 {
+
+	public static void main(String[] args) {
+		Scanner input = new Scanner(System.in);
+		
+		String first_name;
+		String last_name;
+		String mi;
+		
+		System.out.print("Enter your first name: ");
+		first_name=input.nextLine();
+		System.out.print("Enter your last name: ");
+		last_name=input.nextLine();
+		System.out.print("Enter your middle initial: ");
+		mi=input.nextLine();	
+		
+		try
+		{
+			FileWriter writer = new FileWriter("text.txt");
+			writer.write("Last name: " + last_name + "\n");
+			writer.write("First name: " + first_name + "\n");
+			writer.write("Middle Initial: " + mi + "\n");
+			writer.close();
+		}
+		catch (IOException e)
+		{
+			System.out.println("Unable to write");
+		}
+		
+
+	}
+
+}
